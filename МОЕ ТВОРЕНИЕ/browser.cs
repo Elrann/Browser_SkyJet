@@ -8,11 +8,17 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Net;
+using System.Speech.Synthesis;
+using System.Speech.Recognition;
+using System.Threading;
+using System.Threading.Tasks;
+using NAudio;
+using NAudio.Wave;
+using System.IO.Compression;
 namespace WindowsFormsApplication1
 {
     public partial class browser : Form
     {
-
         public browser()
         {
 
@@ -26,56 +32,66 @@ namespace WindowsFormsApplication1
             webBrowser1.Navigate("http://yandex.ru/");
             Form1 fg = new Form1();
             fg.Owner = this;
+            comboBox1.Text = "10";
         }
+        //
+        SpeechSynthesizer sSynt = new SpeechSynthesizer();
+        PromptBuilder pBuild = new PromptBuilder();
+        SpeechRecognitionEngine sReg = new SpeechRecognitionEngine();
+        //
         private void textBox3_KeyDown(object sender, KeyEventArgs e)
-        { 
-        if (e.KeyCode == Keys.Enter)
         {
-            string s;
-            s = textBox3.Text;
-            s = s.Replace(" ", "");
-            webBrowser1.Navigate("http://" + s);
-        }
-        if (e.KeyCode == Keys.F12)
-        {
-            if (richTextBox1.Visible == true)
+            if (e.KeyCode == Keys.Enter)
             {
-                richTextBox1.Visible = false;
+                string s;
+                s = textBox3.Text;
+                s = s.Replace(" ", "");
+                webBrowser1.Navigate("http://" + s);
             }
-            else
+            if (e.KeyCode == Keys.F12)
             {
-                richTextBox1.Visible = true;
-                HttpWebRequest req;
-                HttpWebResponse resp;
-                StreamReader sr;
-                string content;
+                if (richTextBox1.Visible == true)
+                {
+                    richTextBox1.Visible = false;
+                }
+                else
+                {
+                    richTextBox1.Visible = true;
+                    HttpWebRequest req;
+                    HttpWebResponse resp;
+                    StreamReader sr;
+                    string content;
 
-                req = (HttpWebRequest)WebRequest.Create(webBrowser1.Document.Url.ToString());
-                resp = (HttpWebResponse)req.GetResponse();
-                sr = new StreamReader(resp.GetResponseStream(), Encoding.UTF8);
-                content = sr.ReadToEnd();
-                sr.Close();
-                string p = content;
-                p = p.Replace(">", "> \n");
-                richTextBox1.Text = p;
+                    req = (HttpWebRequest)WebRequest.Create(webBrowser1.Document.Url.ToString());
+                    resp = (HttpWebResponse)req.GetResponse();
+                    sr = new StreamReader(resp.GetResponseStream(), Encoding.UTF8);
+                    content = sr.ReadToEnd();
+                    sr.Close();
+                    string p = content;
+                    p = p.Replace(">", "> \n");
+                    richTextBox1.Text = p;
+                }
             }
-        }
         }
         public void webBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             textBox3.Text = webBrowser1.Document.Url.ToString();
             Data.Value = webBrowser1.DocumentTitle;
             listBox2.Items.Add(webBrowser1.Document.Url.ToString());
-            // Создаём переменную sw для записи данных в поток (файл)
-            using (StreamWriter sw = new StreamWriter("history.ini"))
-            {
-                // Первой строкой записываем в файл число строк в нашем списке
-                sw.WriteLine(listBox2.Items.Count.ToString());
-                // В цикле записываем все строки в файл.
-                // Count - число строк в списке
-                for (int j = 0; j < listBox2.Items.Count; j++)
-                    sw.WriteLine(listBox2.Items[j]);
-            }
+            if (!(textBox1.Text == textBox3.Text))
+                // Создаём переменную sw для записи данных в поток (файл)
+                using (FileStream sw = new FileStream("history.txt", FileMode.Append))
+                {
+                    textBox1.Text = textBox3.Text;
+                    string data = DateTime.Now.ToString();
+                    using (StreamWriter we = new StreamWriter(sw))
+                    {
+                        listBox2.Items.Add(textBox1.Text);
+                        we.WriteLine(data + "  " + textBox1.Text);
+                    }
+
+
+                }
 
         }
         private void webBrowser1_ProgressChanged(object sender, WebBrowserProgressChangedEventArgs e) //статусбар
@@ -292,42 +308,39 @@ namespace WindowsFormsApplication1
             panel2.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//кнопка ок таймер
         {
-            uint num;
-            if (uint.TryParse(textBox1.Text, out num))//проверка Число должно быть положительным и целым
-            {
-                string t = textBox5.Text;
-                int i = int.Parse(t);
-                i = i * 60000;
-                if (i > 600000)
+                SpeechSynthesizer h = new SpeechSynthesizer();
+                h.Speak("Браузер будет работать" + comboBox1.Text + "минут");
                 {
-                    timer2.Interval = i;
-                    timer3.Interval = (i - 300000);
-                    timer2.Enabled = true;
-                    timer3.Enabled = true;
-                    panel2.Visible = false;
-                }
-                else
-                {
-                    panel2.Visible = false;
+                    string t = comboBox1.Text;
+                    int i = int.Parse(t);
+                    i = i * 60000;
+                    if (i > 600000)
+                    {
+                        timer2.Interval = i;
+                        timer3.Interval = (i - 300000);
+                        timer2.Enabled = true;
+                        timer3.Enabled = true;
+                        panel2.Visible = false;
+                    }
+                    else
+                    {
+                        panel2.Visible = false;
+                    }
                 }
             }
-            else
-            {
-                MessageBox.Show("Число должно быть положительным и целым!");
-            }
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
+           
+        private void timer2_Tick(object sender, EventArgs e)//выход по таймеру
         {
             Application.Exit();
         }
 
         private void timer3_Tick(object sender, EventArgs e)
         {
-            //panel3.Visible = true;
-            MessageBox.Show("Текст сообщения", "Заголовок сообщения", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            panel3.Visible = true;
+            SpeechSynthesizer h = new SpeechSynthesizer();
+            h.Speak("Осталось 5 минут");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -335,34 +348,32 @@ namespace WindowsFormsApplication1
             panel3.Visible = false;
         }
 
-        private void pictureBox12_Click(object sender, EventArgs e)
+        private void pictureBox12_Click(object sender, EventArgs e)//истр
         {
+            listBox2.Items.Clear();
             if (panel4.Visible == false)
             {
                 panel4.Visible = true;
-                if (System.IO.File.Exists("history.ini") == false)
+                if (System.IO.File.Exists("history.txt") == false)
                 {
-                    System.IO.StreamWriter textFile = new System.IO.StreamWriter(@"history.ini");
-                    textFile.WriteLine("0");
+                    System.IO.StreamWriter textFile = new System.IO.StreamWriter(@"history.txt");
+                    //textFile.WriteLine("0");
                     textFile.Close();
                 }
                 else
                 {
-                    using (StreamReader reader = new StreamReader("history.ini"))
+                    using (StreamReader s = new StreamReader("history.txt"))
                     {
-                        // Считываем первую строку чтобы получить число строк в списке
-                        string z = reader.ReadLine();
-                        //В цикле считываем остальные строки из файла
-                        for (int j = 0; j < Convert.ToDouble(z); j++)
-                            listBox2.Items.Add(reader.ReadLine());
+                        listBox2.Items.AddRange(System.IO.File.ReadAllLines(@"history.txt"));
                     }
                 }
             }
-            else 
+            else
             {
                 panel4.Visible = false;
             }
         }
+
 
         private void listBox2_DoubleClick(object sender, EventArgs e)
         {
@@ -371,19 +382,56 @@ namespace WindowsFormsApplication1
             webBrowser1.Navigate(textBox3.Text);
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)//назад меню
         {
-
+            webBrowser1.GoBack();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)//вперед меню
         {
-
+            webBrowser1.GoForward();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)//обновить меню
         {
+            webBrowser1.Refresh();
+        }
 
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)//выход через контекстное меню
+        {
+            Application.Exit();
+        }
+
+        private void comboBox1_KeyDown(object sender, KeyEventArgs e)//кнопка ОК панель с таймером
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SpeechSynthesizer h = new SpeechSynthesizer();
+                h.Speak("Браузер будет работать" + comboBox1.Text + "минут");
+
+                {
+                    string t = comboBox1.Text;
+                    int i = int.Parse(t);
+                    i = i * 60000;
+                    if (i > 600000)
+                    {
+                        timer2.Interval = i;
+                        timer3.Interval = (i - 300000);
+                        timer2.Enabled = true;
+                        timer3.Enabled = true;
+                        panel2.Visible = false;
+                    }
+                    else
+                    {
+                        panel2.Visible = false;
+                    }
+                }
+            }
+        }
+
+        private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)//запрет ввода данных
+        {
+            comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         }
     }
 }
