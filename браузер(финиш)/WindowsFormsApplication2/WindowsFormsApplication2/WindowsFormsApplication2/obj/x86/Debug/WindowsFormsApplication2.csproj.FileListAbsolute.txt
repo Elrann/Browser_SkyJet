@@ -140,6 +140,3 @@ C:\Users\Дима\Desktop\SkyJet_1_-_Finish\SkyJet_1 - Finish\Novaya_papka1\бр
 C:\Users\Дима\Desktop\SkyJet_1_-_Finish\SkyJet_1 - Finish\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
 C:\Users\Дима\Desktop\SkyJet_1_-_Finish\SkyJet_1 - Finish\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\NAudio.dll
 C:\Users\Дима\Desktop\SkyJet_1_-_Finish\SkyJet_1 - Finish\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\NAudio.xml
-C:\Users\Вова\Downloads\SkyJet_1 - Finish\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
-C:\Users\Вова\Downloads\SkyJet_1 - Finish\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
-C:\Users\Вова\Downloads\SkyJet_1 - Finish\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb

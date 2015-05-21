@@ -533,7 +533,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 171);
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Location = new System.Drawing.Point(15, 172);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(75, 13);
             this.label5.TabIndex = 11;
@@ -543,7 +544,8 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(15, 146);
+            this.label17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label17.Location = new System.Drawing.Point(15, 147);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(54, 13);
             this.label17.TabIndex = 10;
@@ -553,6 +555,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label11.Location = new System.Drawing.Point(15, 123);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(37, 13);
@@ -563,6 +566,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Location = new System.Drawing.Point(15, 34);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 13);
@@ -573,6 +577,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Location = new System.Drawing.Point(15, 196);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 13);
@@ -583,6 +588,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Location = new System.Drawing.Point(15, 100);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 13);
@@ -593,6 +599,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Location = new System.Drawing.Point(15, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 13);
@@ -603,6 +610,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Location = new System.Drawing.Point(15, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 13);
@@ -613,6 +621,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Location = new System.Drawing.Point(15, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 13);
@@ -723,7 +732,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tabControl1);
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "SkyJet";

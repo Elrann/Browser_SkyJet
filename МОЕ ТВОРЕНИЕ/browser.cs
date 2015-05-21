@@ -156,28 +156,35 @@ namespace WindowsFormsApplication1
 
         private void pictureBox8_Click(object sender, EventArgs e)//кнопка - закладки
         {
-            panel1.Visible = true;
-            pictureBox1.Visible = true;
-            textBox2.Text = textBox1.Text;
-            // Очищаем список от содержимого
-            listBox1.Items.Clear();
-            // Создаём переменную reader для чтения из файла browser.ini
-            if (System.IO.File.Exists("browser.ini") == false)
+            if (panel1.Visible == false)
             {
-                System.IO.StreamWriter textFile = new System.IO.StreamWriter(@"browser.ini");
-                textFile.WriteLine("0");
-                textFile.Close();
+                panel1.Visible = true;
+                pictureBox1.Visible = true;
+                textBox2.Text = textBox1.Text;
+                // Очищаем список от содержимого
+                listBox1.Items.Clear();
+                // Создаём переменную reader для чтения из файла browser.ini
+                if (System.IO.File.Exists("browser.ini") == false)
+                {
+                    System.IO.StreamWriter textFile = new System.IO.StreamWriter(@"browser.ini");
+                    textFile.WriteLine("0");
+                    textFile.Close();
+                }
+                else
+                {
+                    using (StreamReader reader = new StreamReader("browser.ini"))
+                    {
+                        // Считываем первую строку чтобы получить число строк в списке
+                        string z = reader.ReadLine();
+                        //В цикле считываем остальные строки из файла
+                        for (int j = 0; j < Convert.ToDouble(z); j++)
+                            listBox1.Items.Add(reader.ReadLine());
+                    }
+                }
             }
             else
             {
-                using (StreamReader reader = new StreamReader("browser.ini"))
-                {
-                    // Считываем первую строку чтобы получить число строк в списке
-                    string z = reader.ReadLine();
-                    //В цикле считываем остальные строки из файла
-                    for (int j = 0; j < Convert.ToDouble(z); j++)
-                        listBox1.Items.Add(reader.ReadLine());
-                }
+                panel1.Visible = false;
             }
         }
         private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
@@ -349,11 +356,12 @@ namespace WindowsFormsApplication1
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)//истр
-        {
+        {            
             listBox2.Items.Clear();
-            if (panel4.Visible == false)
+            if (panel4.Visible == false && panel2.Visible == false)
             {
                 panel4.Visible = true;
+                panel2.Visible = true;
                 if (System.IO.File.Exists("history.txt") == false)
                 {
                     System.IO.StreamWriter textFile = new System.IO.StreamWriter(@"history.txt");
@@ -371,6 +379,7 @@ namespace WindowsFormsApplication1
             else
             {
                 panel4.Visible = false;
+                panel2.Visible = false;
             }
         }
 

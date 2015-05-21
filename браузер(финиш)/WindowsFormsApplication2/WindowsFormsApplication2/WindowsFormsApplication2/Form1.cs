@@ -29,7 +29,8 @@ namespace WindowsFormsApplication1
             tabControl1.TabPages.Remove(tabPage2); //скрываем вкладку с табло
             tabControl1.TabPages.Remove(tabPage3); //скрываем вкладку с закладками
             tabControl1.TabPages.Remove(tabPage4); //скрываем вкладку с историей
-
+            this.Height = 600;
+            this.Width = 800;
         }
         private void Form1_Load(object sender, EventArgs e) // загрузка формы
         {
@@ -556,7 +557,7 @@ namespace WindowsFormsApplication1
                         { Application.Exit(); }
                         break;
                     default:
-                        MessageBox.Show("1");
+                        MessageBox.Show("Данной команды не существует");
                         break;
                 }
             }
