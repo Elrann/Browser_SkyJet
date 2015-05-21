@@ -1,0 +1,58 @@
+C:\Users\Dimon\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\Dimon\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\Dimon\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Dimon\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Dimon\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\Dimon\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+C:\Users\Dimon\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+C:\Users\Dimon\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.browser.resources
+C:\Users\Dimon\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Дима\Desktop\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+C:\Users\Дима\Desktop\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+C:\Users\Дима\Desktop\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Дима\Desktop\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.browser.resources
+C:\Users\Дима\Desktop\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Дима\Desktop\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Дима\Desktop\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\Дима\Desktop\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\Дима\Desktop\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\Дима\Desktop\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+C:\Users\Дима\Desktop\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+C:\Users\Дима\Desktop\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\Дима\Desktop\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\Дима\Desktop\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Дима\Desktop\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.browser.resources
+C:\Users\Дима\Desktop\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Дима\Desktop\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Дима\Desktop\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\SinInShin\Desktop\браузер\Новая папка\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+C:\Users\SinInShin\Desktop\браузер\Новая папка\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+C:\Users\SinInShin\Desktop\браузер\Новая папка\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\SinInShin\Desktop\браузер\Новая папка\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\SinInShin\Desktop\браузер\Новая папка\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.browser.resources
+C:\Users\SinInShin\Desktop\браузер\Новая папка\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\SinInShin\Desktop\браузер\Новая папка\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\SinInShin\Desktop\браузер\Новая папка\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\SinInShin\Desktop\браузер\Новая папка\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\SinInShin\Desktop\браузер\Новая папка\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\Дима\Downloads\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+C:\Users\Дима\Downloads\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+C:\Users\Дима\Downloads\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\Дима\Downloads\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\Дима\Downloads\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Дима\Downloads\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.browser.resources
+C:\Users\Дима\Downloads\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Дима\Downloads\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\Дима\Downloads\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Дима\Downloads\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\Вова\Desktop\МАМИ\ППО\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
+C:\Users\Вова\Desktop\МАМИ\ППО\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
+C:\Users\Вова\Desktop\МАМИ\ППО\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\Вова\Desktop\МАМИ\ППО\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\Вова\Desktop\МАМИ\ППО\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.browser.resources
+C:\Users\Вова\Desktop\МАМИ\ППО\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\Вова\Desktop\МАМИ\ППО\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\Вова\Desktop\МАМИ\ППО\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Вова\Desktop\МАМИ\ППО\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\Вова\Desktop\МАМИ\ППО\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication1.AboutBox1.resources
+C:\Users\Вова\Desktop\МАМИ\ППО\Novaya_papka1\браузер(финиш)\WindowsFormsApplication2\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
